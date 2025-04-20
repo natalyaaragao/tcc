@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCC - Objetos Educacionais</title>
+    <style>
+        :root {
+            --primary-color: #0d1117;
+            --secondary-color: #161b22;
+            --accent-color: #58a6ff;
+            --text-color: #c9d1d9;
+            --heading-color: #f0f6fc;
+            --border-color: #30363d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--primary-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: var(--heading-color);
+            font-size: 1.8rem;
+            margin: 5px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        h3 {
+            color: var(--heading-color);
+            font-size: 1.3rem;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .container {
+            background-color: var(--secondary-color);
+            border-radius: 6px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+            text-align: justify;
+        }
+        
+        .info {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #8b949e;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+        
+        th {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--heading-color);
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+               
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .reference {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            text-indent: -25px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: #8b949e;
+        }
+        
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Objetos de Aprendizagem e Tecnologia Educacional</h1>
+        <p class="info">Trabalho de Conclusão de Curso - <strong>Natalya Silva Aragão</strong></p>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Introdução</h2>
+            <p>A educação aberta é uma iniciativa que busca promover uma aprendizagem inclusiva, equitativa e de qualidade, fundamentada no uso de práticas colaborativas, tecnologias livres e Recursos Educacionais Abertos (REA).  Esses recursos — como livros, softwares, vídeos, jogos e imagens — consistem em materiais de ensino, pesquisa e aprendizagem disponibilizados de forma livre, permitindo seu uso, adaptação e compartilhamento por qualquer pessoa, democratizando o acesso ao conhecimento.</p>
+            
+            <p>Dentro desse contexto, pode-se considerar que o projeto H5P está alinhado aos princípios dos Recursos Educacionais Abertos (REA). Tal projeto desenvolve e mantém uma plataforma de software livre voltada à criação e compartilhamento de objetos educacionais interativos. A iniciativa busca superar barreiras comuns à produção e reutilização de conteúdos educacionais digitais, como questões de direitos autorais, dificuldades técnicas, ferramentas complexas e incompatibilidades entre diferentes formatos e plataformas.</p>
+        </section>
+
+        <section class="container">
+            <h2>Proposta</h2>
+            <p>Diante desse cenário, este trabalho tem como objetivo desenvolver um novo tipo de conteúdo interativo e modular, seguindo o modelo H5P e baseado em padrões abertos de tecnologia educacional. Embora o contexto de desenvolvimento deste objeto esteja voltado ao ensino de física, a proposta é que sua estrutura seja genérica e reutilizável, permitindo aplicação em diversas áreas do conhecimento. Além disso, o processo de desenvolvimento permitirá uma análise e avaliação do projeto H5P sob a perspectiva de tópicos de engenharia de software e boas práticas de desenvolvimento.</p>
+        </section>
+
+        <section class="container">
+            <h2>Cronograma</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Atividades</th>
+                            <th>Abr</th>
+                            <th>Mai</th>
+                            <th>Jun</th>
+                            <th>Jul</th>
+                            <th>Ago</th>
+                            <th>Set</th>
+                            <th>Out</th>
+                            <th>Nov</th>
+                            <th>Dez</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Estudo do projeto H5P e REA</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Especificação técnica</td>
+                            <td></td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Protótipo de interface</td>
+                            <td></td>
+                            <td></td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvimento do objeto</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Testes e refinamento</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Documentação</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Análise de engenharia de software</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>X</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td>Revisão final</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>X</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Referências Bibliográficas</h2>
+            
+            <div class="reference">
+	INICIATIVA EDUCAÇÃO ABERTA. Perguntas frequentes. 2024. Disponível em: https://aberta.org.br/faq/. Acesso em: 16 abr. 2025.
+            </div>
+            
+            <div class="reference">
+                H5P. About the project. 2024. Disponível em: https://h5p.org/about-the-project. Acesso em: 16 abr. 2025.
+            </div>
+                      
+        </section>    
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Objetos de Aprendizagem e Tecnologia Educacional</p>
+        <p>Trabalho de Conclusão de Curso</p>
+    </footer>
+</body>
+</html>
