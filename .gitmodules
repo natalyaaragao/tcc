@@ -1,0 +1,9 @@
+[submodule "h5p-agamotto"]
+	path = h5p-agamotto
+	url = https://github.com/tcc-h5p/h5p-agamotto.git
+[submodule "h5p-editor-php-library"]
+	path = h5p-editor-php-library
+	url = https://github.com/tcc-h5p/h5p-editor-php-library.git
+[submodule "h5p-editor-vertical-tabs"]
+	path = h5p-editor-vertical-tabs
+	url = https://github.com/tcc-h5p/h5p-editor-vertical-tabs.git
