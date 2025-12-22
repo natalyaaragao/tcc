@@ -34,7 +34,7 @@ npm ci
 npm run build        
 cd ../..
 
-echo "🧹 Substituindo H5P.Question pelo clone"
+echo "🧹 Substituindo H5P.Question"
 rm -rf libraries/H5P.Question-*
 git clone https://github.com/h5p/h5p-question.git libraries/H5P.Question-1.5
 cd libraries/H5P.Question-1.5
