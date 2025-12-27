@@ -25,8 +25,8 @@ cd ..
 
 echo "🧹 Substituindo H5P.Agamotto"
 rm -rf libraries/H5P.Agamotto-*
-git clone https://github.com/tcc-h5p/h5p-agamotto.git libraries/h5p-agamotto
-cd libraries/h5p-agamotto
+git clone https://github.com/tcc-h5p/h5p-agamotto.git libraries/H5P.Agamotto-1.6
+cd libraries/H5P.Agamotto-1.6
 git checkout tcc
 # Build JS/CSS → dist/
 echo "⚙️  Build h5p-agamotto com npm"
@@ -34,7 +34,7 @@ npm ci
 npm run build        
 cd ../..
 
-echo "🧹 Substituindo H5P.Question"
+echo "🧹 Substituindo H5P.Question pelo clone"
 rm -rf libraries/H5P.Question-*
 git clone https://github.com/h5p/h5p-question.git libraries/H5P.Question-1.5
 cd libraries/H5P.Question-1.5
